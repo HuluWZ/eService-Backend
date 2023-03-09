@@ -4,12 +4,17 @@
   "info": {
     "singularName": "application-response",
     "pluralName": "application-responses",
-    "displayName": "ApplicationResponse"
+    "displayName": "ApplicationResponse",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "application": {
       "type": "relation",
@@ -18,7 +23,12 @@
     },
     "response": {
       "type": "richtext",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "status": {
       "type": "enumeration",
@@ -27,7 +37,12 @@
         "Approved"
       ],
       "default": "Pending",
-      "required": false
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
